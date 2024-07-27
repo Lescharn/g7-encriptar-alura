@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptar Palabras</title>
+    <link rel="stylesheet" href="estilo.css"> 
+    
+</head>
+<body>
+<h1>Página web para encriptar mensajes</h1>
+  <div class="contenedor">  
+    <div class="primerBloque">
+        <img id="logo" src="img/Logo.png">
+        <br>
+        <br>
+        <br>
+        <input type="text" id="palabrasIniciales" placeholder="ingrese el texto aquí" > 
+        <p>Escriba la palabra en minuscula y sin acento o caracteres especiales</p>
+        <button  id="boton1" onclick="encriptar()">Encriptar palabras</button>
+        <button id="boton2" onclick="desencriptar()"> Desencriptar</button>
+           
+    </div>
+    <div class="segundoBloque">
+        <p id="palabrasEncriptadas">
+            <img id="dibujo" src="img/dibujo1.png"><br> <strong>Ningun mensaje fue encontrado.</strong><br> 
+          Ingresa el texto que desees encriptar o desencriptar.</p>
+        <button onclick="copiar()" id="copiar">copiar</button>
+    </div>
+</div>
+<footer>
+  <div class="footer-container">
+      <div class="footer-content">
+          <p>@Charles Navarro - 2024</p>
+          <div class="footer-links">
+              <a href="#">Contacto</a> | 
+              <a href="#">Privacidad</a> | 
+              <a href="#">Términos</a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+      <script src="java.js"></script>
+</body>
+</html>

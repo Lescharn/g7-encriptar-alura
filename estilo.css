@@ -1,0 +1,262 @@
+
+:root {
+    --main-color: #0A3871;
+    --accent-color: #802a08;
+    --background-color: #F0F4F8;
+    --button-background: #D8DFE8;
+    --text-color: #333333;
+    --footer-background: #0A3871;
+    --footer-text-color: #F0F4F8;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem; /* Tamaño base */
+    text-align: center;
+    color: #0A3871;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 0;
+    padding: 0.3rem 0;
+    transition: font-size 0.3s ease;
+}
+
+#palabrasEncriptadas{
+    font-family: 'Arial', sans-serif; 
+    font-size: 18px; 
+    line-height: 1.6; 
+    color: #333333; 
+    text-align: justify; 
+    padding: 10px 20px; 
+    background-color: #f5f5f5; 
+    border-left: 4px solid #0A3871; 
+    margin: 20px 20px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+    border-radius: 5px; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F0F4F8;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+
+.segundoBloque{
+    background-color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 3%;
+    width: 30%;
+    box-shadow: 0 8px 8px -4px rgba(0, 0, 0, 0.5);
+}
+
+#logo {
+    margin: 10px;
+    
+}
+
+input{
+    font-size: 2em;
+}
+
+input::placeholder{
+    color: #0A3871;
+}
+
+#copiar {
+    display: none;
+} 
+
+strong{
+    font-size: 2em;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Añade transición para suavizar los cambios */
+}
+
+#boton1 {
+    color: #F0F4F8; 
+    background-color: #0A3871;
+}
+
+#boton2 {
+    color: #0A3871; 
+    background-color: #D8DFE8;
+}
+
+
+
+#copiar {
+    padding: 10px 40px;
+    margin: 20px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5  em;
+    cursor: pointer;
+    margin-right: 10px; 
+    color: #0A3871; 
+    background-color: #D8DFE8;
+}
+
+#boton1:hover, #boton2:hover, #copiar:hover {
+    background-color: var(--accent-color);
+    color: var(--button-background);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+footer{
+    text-align: center;
+    color: #0A3871;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+
+
+
+footer {
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: var(--footer-text-color);
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--accent-color);
+}
+
+/* Media Queries */
+
+@media (max-width: 1024px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .segundoBloque {
+        width: 80%;
+    }
+
+    input {
+        font-size: 1.5em;
+    }
+
+    strong {
+        font-size: 1.5em;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+     h1{
+        font-size: 2rem;
+     }
+
+    .contenedor {
+        padding: 10px;
+    }
+
+    .segundoBloque {
+        width: 90%;
+    }
+
+    input {
+        font-size: 1.2em;
+    }
+
+    strong {
+        font-size: 1.2em;
+    }
+
+    button {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 5px;
+    }
+
+    .segundoBloque {
+        width: 100%;
+    }
+
+    input {
+        font-size: 1em;
+    }
+
+    strong {
+        font-size: 1em;
+    }
+
+    button {
+        font-size: 10px;
+        padding: 8px 16px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+}
